@@ -41,15 +41,7 @@ Objective:
 
 ERD Relationship Diagram 
 
-+-------------+       +-------------+       +----------------+
-|   Customer  |       |   Booking   |       | TravelPackage  |
-+-------------+       +-------------+       +----------------+
-| CustomerID  |<------| BookingID   |<------| PackageID      |
-| FirstName   |       | CustomerID  |       | PackageName    |
-| LastName    |       | DepartureDate|       | Description    |
-| Email       |       | ReturnDate  |       | PackagePrice   |
-| Phone       |       | TotalCost   |       +----------------+
-+-------------+
+https://drive.google.com/file/d/1s2QH1bImUzSTgiBz4njyFKJ89QBytKh0/view?usp=drive_link
 
 Entities:
 1. Customer:
@@ -105,11 +97,11 @@ Ensuring the website is accessible and user-friendly on various devices
 
 Sequence Diagrams
 
-Sequence Diagram #1
+![Sequence Diagram for Booking](https://drive.google.com/uc?export=view&id=1PWoZVhQeiMCtS4Ha8F0YhiKqCMIeRtKZ)
 
-Sequence Diagram #2
+![Sequence Diagram for Customer Login](https://drive.google.com/uc?export=view&id=1HGLmLCkMwY6KKRk2mX4kqQ0BMH7-ODiM)
 
-Sequence Diagram #3
+![Sequence Diagram for Customer Signup](https://drive.google.com/uc?export=view&id=1orIk7pGHhqyyh2_nyYA5bRnWi4g9YJm_)
 
 
 References
