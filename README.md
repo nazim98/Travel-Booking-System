@@ -41,7 +41,7 @@ Objective:
 
 ERD Relationship Diagram 
 
-![ERD Relationship](https://drive.google.com/file/d/1s2QH1bImUzSTgiBz4njyFKJ89QBytKh0/view?usp=drive_link)
+![ERD Relationship](https://drive.google.com/uc?id=1s2QH1bImUzSTgiBz4njyFKJ89QBytKh0)
 
 Entities:
 1. Customer:
