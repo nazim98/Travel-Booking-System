@@ -1,66 +1,118 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+KULLIYYAH OF INFORMATION & COMMUNICATION TECHNOLOGY
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+INFO 3305 WEB APPLICATION DEVELOPMENT
+SEMESTER I, 2023/2024
+SECTION 1
 
-## About Laravel
+GROUP PROJECT PROPOSAL
+TRAVEL BOOKING SYSTEM
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+PREPARED BY: GROUP XYZ
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+NAME AND MATRIC NUMBER 
+1. FAIZAL AKHTAR BIN AZHAR
+2124565
+2. WAN MOHD NAZIM BIN WAN MUHAMAD SAIDIN
+2114261
+3. MUHAMMAD HAFIZ BIN MOHD ZULKARNAIN
+2111359
+4. NURAIN BINTI MOHAMED FARID
+2117492
+5. NUR SYAHIRAH BINTI AHMAD YUSOF
+2110102
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+LECTURER
+DR.MOHD KHAIRUL AZMI BIN HASSAN
 
-## Learning Laravel
+DUE
+1 JANUARY 2024
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Introduction
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Introducing our proposed Travel Booking System,  a smart web application that makes planning and booking trips easy and enjoyable. This system focuses on providing curated travel packages that encompass every essential aspect of a journey, ensuring a hassle-free and enjoyable exploration of various destinations. It is designed to be user-friendly, focusing on simplicity and efficiency. Its user interface is characterized by its simplicity and functionality. Moreover, the interface is designed to provide users with a visually pleasing and easily navigable environment, enhancing the overall user experience while exploring and selecting travel options. 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+It simplifies the process of selecting pre-defined travel packages. Users can explore a range of packages, each meticulously crafted to include accommodations (such as hotels, chalets, and homestays), transportation options, predefined trip durations, and a comprehensive list of places to visit during the specified itinerary. This approach eliminates the complexities of tailoring travel plans to individual preferences, providing users with a convenient and efficient method to select a package that suits their desired travel experience. Also, the incorporation of dynamic routes ensures a fluid and intuitive navigation experience, enabling users to traverse the platform seamlessly.
 
-## Laravel Sponsors
+Real-time updates and notifications are integrated to keep users well-informed about their booking confirmations, itinerary details and adjustments, and any special offers associated with the selected travel package. This feature enhances user engagement and ensures transparency throughout the booking process. In conclusion, this system is tailored to cater to users seeking a straightforward and efficient way to explore and select pre-defined travel packages. By focusing on curated options that include accommodations, transportation, trip durations, and destination highlights, our system offers a user-friendly approach to booking memorable journeys and embracing the simplicity of travel planning.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Objective: 
+1. Provision our tourism destination and property.
+2. Selling our packages and services.
 
-### Premium Partners
+ERD Relationship Diagram 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
++-------------+       +-------------+       +----------------+
+|   Customer  |       |   Booking   |       | TravelPackage  |
++-------------+       +-------------+       +----------------+
+| CustomerID  |<------| BookingID   |<------| PackageID      |
+| FirstName   |       | CustomerID  |       | PackageName    |
+| LastName    |       | DepartureDate|       | Description    |
+| Email       |       | ReturnDate  |       | PackagePrice   |
+| Phone       |       | TotalCost   |       +----------------+
++-------------+
 
-## Contributing
+Entities:
+1. Customer:
+Attributes: CustomerID (Primary Key), FirstName, LastName, Email, Phone
+2. Booking:
+Attributes: BookingID (Primary Key), CustomerID (Foreign Key), DepartureDate, ReturnDate, TotalCost
+3. TravelPackage:
+Attributes: PackageID (Primary Key), PackageName, Description, PackagePrice
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Relationships:
+1. One-to-Many relationship between Customer and Booking (a customer can have multiple bookings).
+2. One-to-Many relationship between TravelPackage and Booking (a travel package can be associated with multiple bookings, but each booking is associated with one travel package).
 
-## Code of Conduct
+Function and Functionalities
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. Customer Management
+Function: User Authentication
+Functionalities:
+Customer registration
+Secure login system
+Function: Profile Management
+Functionalities:
+Allowing customers to update their profile information
 
-## Security Vulnerabilities
+2. Booking Management
+Function: Booking Operations
+Functionalities:
+Booking creation (form for customers)
+Modification and cancellation of existing bookings
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+3. Travel Package Management
+Function: Package Presentation
+Functionalities:
+Displaying available travel packages and services with details (name, description, price)
 
-## License
+4. Cost Calculation
+Function: Cost Calculation
+Functionalities:
+Automatically calculating the total cost of a booking based on the selected travel package or service and dates
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5. Admin Panel
+Function: Administration
+Functionalities:
+Admin dashboard for managing customers, bookings, and travel packages
+Viewing and managing customer details and bookings
+Adding, modifying, or removing travel packages
+
+6. Responsive Design
+Function: Accessibility
+Functionalities:
+Ensuring the website is accessible and user-friendly on various devices
+
+
+Sequence Diagrams
+
+Sequence Diagram #1
+
+Sequence Diagram #2
+
+Sequence Diagram #3
+
+
+References
+https://tnazim1998.wixsite.com/vacation101
+
+
