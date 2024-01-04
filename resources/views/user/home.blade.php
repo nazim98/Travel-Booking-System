@@ -60,7 +60,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="/">Contact Us</a>
               </li>
 
               @if (Route::has('login'))
@@ -129,7 +129,7 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>About Sixteen Clothing</h2>
+              <h2>About Travel Booking System</h2>
             </div>
           </div>
           <div class="col-md-6">
@@ -156,25 +156,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     </div>
 
 
-    <div class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
-                </div>
-                <div class="col-md-4">
-                  <a href="#" class="filled-button">Purchase Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+ \
 
 
     <footer>
@@ -182,9 +164,7 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+              <p>Copyright &copy; GROUP 4
             </div>
           </div>
         </div>
